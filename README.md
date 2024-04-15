@@ -344,32 +344,32 @@ See: [rest-api-requests.http](http-calls/rest-api-requests.http)
 
 Build the project:
 
-```
+```bash
 ./mvnw clean install
 ```
 
 Run the single node Kafka cluster:
 
-```
+```bash
 docker-compose up -d
 ```
 
 and wait until all the containers are healthy:
 
-```
-docker-compose p
+```bash
+docker-compose ps
 ```
 
 Start the Spring Boot application:
 
-```
+```bash
 cd spring-kafka-application
 ./mvnw spring-boot:run
 ```
 
 To shutdown the single none Kafka cluster:
 
-```
+```bash
 docker-compose down -v
 ```
 
